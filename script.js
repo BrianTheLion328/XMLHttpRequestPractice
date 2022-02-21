@@ -18,7 +18,7 @@ xhr.open('GET', 'https://pokeapi.co/api/v2/pokemon');
 // .open take 2 arguments, the type of request (GET, POST, PUT, DELETE)
 // and the url of the website/api itself
 xhr.send();
-console.log("Button was pushed.")
+console.log("Fetch button was pushed.")
 }
 
 let fetchButton = document.getElementById('fetch-button');
@@ -43,3 +43,23 @@ fetch(url)
     .catch(error => {
         console.warn('Something went wrong: ', error);
     });
+
+// third example of an api call using the fetch with async/await
+
+async function fetchAsync(someURL) {
+  try {
+      let response = await fetch(someURL)
+      let data = response.json()
+      return data
+  } catch (error) {
+    console.warn("Something went wrong here! :", error)
+  }
+}
+
+fetchAsync(url)
+    .then(pokemon => {
+       console.log("Pokemon from async/await: ", pokemon)
+    })
+
+// let asyncButton = document.getElementById('async-button');
+// asyncButton.addEventListener('click', fetchAsync)
