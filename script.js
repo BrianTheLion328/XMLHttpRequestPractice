@@ -61,5 +61,9 @@ fetchAsync(url)
        console.log("Pokemon from async/await: ", pokemon)
     })
 
+
+    // disabled button for now
+
+    
 // let asyncButton = document.getElementById('async-button');
 // asyncButton.addEventListener('click', fetchAsync)
