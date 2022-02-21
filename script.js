@@ -62,8 +62,8 @@ fetchAsync(url)
     })
 
 
+    // why isnt this button working as intended?
     // disabled button for now
 
-    
 // let asyncButton = document.getElementById('async-button');
 // asyncButton.addEventListener('click', fetchAsync)
