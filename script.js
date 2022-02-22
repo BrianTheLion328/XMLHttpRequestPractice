@@ -52,7 +52,7 @@ async function fetchAsync(someURL) {
       let data = response.json()
       return data
   } catch (error) {
-    console.warn("Something went wrong here! :", error)
+    console.warn("Something went wrong with the fetchAsync function! :", error)
   }
 }
 
