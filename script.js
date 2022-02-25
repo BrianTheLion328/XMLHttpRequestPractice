@@ -57,8 +57,8 @@ async function fetchAsync(someURL) {
 }
 
 fetchAsync(url)
-    .then(pokemon => {
-       console.log("Pokemon from async/await: ", pokemon)
+    .then(data => {
+       console.log("Pokemon from async/await: ", data)
     })
 
 
